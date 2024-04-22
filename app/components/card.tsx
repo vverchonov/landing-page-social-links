@@ -31,7 +31,7 @@ export const Card = () => {
   return (
     <div className="card-size-cutom flex flex-col justify-center gap-8 p-8">
       <div className="flex flex-col gap-2 w-full items-center">
-        <CopyButton copyLink="test" />
+        <CopyButton copyLink="https://www.elonamarsy.com/" />
         <img
           className="rounded-full w-36 h-36 object-cover mb-4"
           src="./elona.jpg"
