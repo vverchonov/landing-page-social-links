@@ -21,7 +21,8 @@ const DexsrcreenerLink =
 const DextoolsLink =
   "https://www.dextools.io/app/en/solana/pair-explorer/A8ERP72GYZZEtoF4qH8rjHdHtkxKBCncr49Jow3NQdZZ?t=1713755434326";
 
-const JupiterLink = "";
+const JupiterLink =
+  "https://jup.ag/swap/So11111111111111111111111111111111111111112-HyU6jehd9G4W2uDMcuQbwFBmNKgEmvuDuwhgAwvSx2B2?inAmount=";
 
 const RaydiumLink =
   "https://raydium.io/swap/?inputCurrency=HyU6jehd9G4W2uDMcuQbwFBmNKgEmvuDuwhgAwvSx2B2&outputCurrency=sol&outputSymbol=HyU6je&inputAmount=0&fixed=in";
@@ -102,10 +103,10 @@ export const Card = () => {
           <p className="ms-auto me-auto text-lg">Buy on Raydium</p>
         </a>
         {/* JUPITER */}
-        {/* <a target="_blank" href={JupiterLink} className={buttonClass}>
+        <a target="_blank" href={JupiterLink} className={buttonClass}>
           <img src={"./jupiter.png"} className={imgClass} />
-          <p className="ms-auto me-auto text-lg">Find us on Jupiter</p>
-        </a> */}
+          <p className="ms-auto me-auto text-lg">Buy on Jupiter</p>
+        </a>
         {/* DEXSCREENER */}
         <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
           <svg
