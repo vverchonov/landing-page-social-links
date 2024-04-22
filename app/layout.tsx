@@ -1,15 +1,9 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "$ELONA",
-  description: "ELONA MARSY",
-};
 
 export default function RootLayout({
   children,
@@ -19,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <meta property="title" content="$ELONA" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Elona Marsy" />
         <meta property="og:url" content="https://www.elonamarsy.com/" />
