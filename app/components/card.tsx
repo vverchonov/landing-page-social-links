@@ -13,7 +13,7 @@ const TelegramDEVLink = "https://t.me/lettodev";
 
 const WebLink = "https://home.elonamarsy.com/";
 
-const PumpLink = "";
+// const PumpLink = "";
 
 const DexsrcreenerLink = "";
 
