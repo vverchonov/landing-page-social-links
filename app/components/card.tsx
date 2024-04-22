@@ -1,7 +1,9 @@
+import { CopyButton } from "./copy-button";
+
 const buttonClass =
   "w-full bg-white text-black font-bold py-2 px-6 cursor-pointer rounded-full flex flex-row content-center items-center transform transition duration-500 hover:scale-105";
 
-const imgClass = "w-16 h-16";
+const imgClass = "w-12 h-12";
 
 const Xlink = "";
 
@@ -17,19 +19,26 @@ const WebLink = "";
 
 export const Card = () => {
   return (
-    <div className="max-w-2xl min-w-96 border-2 border-white flex flex-col justify-center gap-8 p-8">
+    <div className="card-size-cutom flex flex-col justify-center gap-8 p-8">
       <div className="flex flex-col gap-2 w-full items-center">
+        <CopyButton copyLink="test" />
         <img
           className="rounded-full w-36 h-36 object-cover mb-4"
-          src="./main.jpg"
+          src="./elona.jpg"
         />
         <h1 className="text-xl text-white font-semibold">ELONA MARSY</h1>
         <p className="text-lg text-white">$ELONA</p>
       </div>
       <div className="flex flex-col gap-4">
-        {/* Web Link DEV DEV DEV */}
+        {/* Web Link */}
         <a target="_blank" href={WebLink} className={buttonClass}>
-          <img className={imgClass + "w-14 h-14"} src="./planet.svg" />
+          <svg
+            className={imgClass + " w-12 h-12 "}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+          </svg>
           <p className="ms-auto me-auto text-lg">$ELONA Website</p>
         </a>
         {/* X - TWITTER */}
@@ -67,8 +76,29 @@ export const Card = () => {
           <img className={imgClass} src="./pump.webp" />
           <p className="ms-auto me-auto text-lg">Find us on Pump Fun</p>
         </a> */}
+        {/* Telegram DEV DEV DEV */}
+        <a target="_blank" href={TelegramDEVLink} className={buttonClass}>
+          <svg
+            className={imgClass}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path d="M120.1 208.3c-3.9-2.9-7.8-4.4-11.7-4.4H91v104.5h17.5c3.9 0 7.8-1.5 11.7-4.4 3.9-2.9 5.8-7.3 5.8-13.1v-69.7c0-5.8-2-10.2-5.8-13.1zM404.1 32H43.9C19.7 32 .1 51.6 0 75.8v360.4C.1 460.4 19.7 480 43.9 480h360.2c24.2 0 43.8-19.6 43.9-43.8V75.8c-.1-24.2-19.7-43.8-43.9-43.8zM154.2 291.2c0 18.8-11.6 47.3-48.4 47.3h-46.4V173h47.4c35.4 0 47.4 28.5 47.4 47.3l0 70.9zm100.7-88.7H201.6v38.4h32.6v29.6H201.6v38.4h53.3v29.6h-62.2c-11.2 .3-20.4-8.5-20.7-19.7V193.7c-.3-11.2 8.6-20.4 19.7-20.7h63.2l0 29.5zm103.6 115.3c-13.2 30.8-36.9 24.6-47.4 0l-38.5-144.8h32.6l29.7 113.7 29.6-113.7h32.6l-38.5 144.8z" />
+          </svg>
+          <p className="ms-auto me-auto text-lg">Telegram DEV</p>
+        </a>
+        {/* RAYDIUM */}
+        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+          <img src={"./raydium.svg"} className={imgClass} />
+          <p className="ms-auto me-auto text-lg">Find us on Raydium</p>
+        </a> */}
+        {/* JUPITER */}
+        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+          <img src={"./jupiter.png"} className={imgClass} />
+          <p className="ms-auto me-auto text-lg">Find us on Jupiter</p>
+        </a> */}
         {/* DEXSCREENER */}
-        <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -83,22 +113,12 @@ export const Card = () => {
             <path d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z"></path>
           </svg>
           <p className="ms-auto me-auto text-lg">Find us on DEX</p>
-        </a>
-        {/* Telegram DEV DEV DEV */}
-        <a target="_blank" href={TelegramDEVLink} className={buttonClass}>
-          <svg
-            className={imgClass}
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="100"
-            height="100"
-            viewBox="0 0 50 50"
-          >
-            <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
-          </svg>
-          <p className="ms-auto me-auto text-lg">Telegram DEV</p>
-        </a>
+        </a> */}
+        {/* DEXTOOLS */}
+        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+          <img className={imgClass} src="./dextools.svg" />
+          <p className="ms-auto me-auto text-lg">Find us on DexTools</p>
+        </a> */}
       </div>
     </div>
   );

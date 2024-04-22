@@ -26,3 +26,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.card-size-cutom {
+  width: 600px;
+}
+
+@media (width <= 1250px) {
+  .card-size-cutom {
+    width: 100%;
+  }
+}
