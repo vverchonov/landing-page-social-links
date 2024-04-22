@@ -5,11 +5,11 @@ const buttonClass =
 
 const imgClass = "w-12 h-12";
 
-const Xlink = "";
+const Xlink = "https://twitter.com/ELONAMARSY";
 
-const TelegramLink = "";
+const TelegramLink = "https://t.me/elonamarsy";
 
-const TelegramDEVLink = "";
+const TelegramDEVLink = "https://t.me/lettodev";
 
 const WebLink = "";
 
