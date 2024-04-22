@@ -11,11 +11,17 @@ const TelegramLink = "";
 
 const TelegramDEVLink = "";
 
+const WebLink = "";
+
 const PumpLink = "";
 
 const DexsrcreenerLink = "";
 
-const WebLink = "";
+const DextoolsLink = "";
+
+const JupiterLink = "";
+
+const RaydiumLink = "";
 
 export const Card = () => {
   return (
@@ -88,12 +94,12 @@ export const Card = () => {
           <p className="ms-auto me-auto text-lg">Telegram DEV</p>
         </a>
         {/* RAYDIUM */}
-        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+        {/* <a target="_blank" href={RaydiumLink} className={buttonClass}>
           <img src={"./raydium.svg"} className={imgClass} />
           <p className="ms-auto me-auto text-lg">Find us on Raydium</p>
         </a> */}
         {/* JUPITER */}
-        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+        {/* <a target="_blank" href={JupiterLink} className={buttonClass}>
           <img src={"./jupiter.png"} className={imgClass} />
           <p className="ms-auto me-auto text-lg">Find us on Jupiter</p>
         </a> */}
@@ -115,7 +121,7 @@ export const Card = () => {
           <p className="ms-auto me-auto text-lg">Find us on DEX</p>
         </a> */}
         {/* DEXTOOLS */}
-        {/* <a target="_blank" href={DexsrcreenerLink} className={buttonClass}>
+        {/* <a target="_blank" href={DextoolsLink} className={buttonClass}>
           <img className={imgClass} src="./dextools.svg" />
           <p className="ms-auto me-auto text-lg">Find us on DexTools</p>
         </a> */}
