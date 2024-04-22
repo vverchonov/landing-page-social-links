@@ -11,7 +11,7 @@ const TelegramLink = "https://t.me/elonamarsy";
 
 const TelegramDEVLink = "https://t.me/lettodev";
 
-const WebLink = "";
+const WebLink = "https://home.elonamarsy.com/";
 
 const PumpLink = "";
 
