@@ -23,7 +23,8 @@ const DextoolsLink =
 
 const JupiterLink = "";
 
-const RaydiumLink = "";
+const RaydiumLink =
+  "https://raydium.io/swap/?inputCurrency=HyU6jehd9G4W2uDMcuQbwFBmNKgEmvuDuwhgAwvSx2B2&outputCurrency=sol&outputSymbol=HyU6je&inputAmount=0&fixed=in";
 
 export const Card = () => {
   return (
@@ -96,10 +97,10 @@ export const Card = () => {
           <p className="ms-auto me-auto text-lg">Telegram DEV</p>
         </a>
         {/* RAYDIUM */}
-        {/* <a target="_blank" href={RaydiumLink} className={buttonClass}>
+        <a target="_blank" href={RaydiumLink} className={buttonClass}>
           <img src={"./raydium.svg"} className={imgClass} />
           <p className="ms-auto me-auto text-lg">Find us on Raydium</p>
-        </a> */}
+        </a>
         {/* JUPITER */}
         {/* <a target="_blank" href={JupiterLink} className={buttonClass}>
           <img src={"./jupiter.png"} className={imgClass} />
