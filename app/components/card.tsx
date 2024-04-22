@@ -18,7 +18,8 @@ const WebLink = "https://home.elonamarsy.com/";
 const DexsrcreenerLink =
   "https://dexscreener.com/solana/A8ERP72GYZZEtoF4qH8rjHdHtkxKBCncr49Jow3NQdZZ";
 
-const DextoolsLink = "";
+const DextoolsLink =
+  "https://www.dextools.io/app/en/solana/pair-explorer/A8ERP72GYZZEtoF4qH8rjHdHtkxKBCncr49Jow3NQdZZ?t=1713755434326";
 
 const JupiterLink = "";
 
@@ -122,10 +123,10 @@ export const Card = () => {
           <p className="ms-auto me-auto text-lg">Find us on DEX</p>
         </a>
         {/* DEXTOOLS */}
-        {/* <a target="_blank" href={DextoolsLink} className={buttonClass}>
+        <a target="_blank" href={DextoolsLink} className={buttonClass}>
           <img className={imgClass} src="./dextools.svg" />
           <p className="ms-auto me-auto text-lg">Find us on DexTools</p>
-        </a> */}
+        </a>
       </div>
     </div>
   );
